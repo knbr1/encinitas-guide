@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encinitas Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hero-bg {
+      background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Moonlight_Beach_Encinitas.jpg/1280px-Moonlight_Beach_Encinitas.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans">
+
+  <!-- Nav -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <span class="text-xl font-bold tracking-tight text-teal-700">Encinitas Guide</span>
+      <div class="flex gap-6 text-sm font-medium text-stone-600">
+        <a href="#restaurants" class="hover:text-teal-600 transition">Restaurants</a>
+        <a href="#beaches" class="hover:text-teal-600 transition">Beaches</a>
+        <a href="#things-to-do" class="hover:text-teal-600 transition">Things To Do</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg h-96 flex items-center justify-center text-center text-white">
+    <div>
+      <h1 class="text-5xl font-bold tracking-tight drop-shadow">Welcome to Encinitas</h1>
+      <p class="mt-3 text-lg text-stone-200 drop-shadow">Sun, surf, and the best of coastal California</p>
+    </div>
+  </section>
+
+  <!-- Restaurants -->
+  <section id="restaurants" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-2 text-teal-700">Restaurants</h2>
+    <p class="text-stone-500 mb-8">Local favorites and must-try spots in Encinitas.</p>
+    <div id="restaurant-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Cards inserted here -->
+    </div>
+  </section>
+
+  <!-- Beaches -->
+  <section id="beaches" class="bg-teal-50">
+    <div class="max-w-5xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold mb-2 text-teal-700">Beaches</h2>
+      <p class="text-stone-500 mb-8">Miles of coastline, each beach with its own vibe.</p>
+      <div id="beach-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Cards inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Things To Do -->
+  <section id="things-to-do" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-2 text-teal-700">Things To Do</h2>
+    <p class="text-stone-500 mb-8">Activities and attractions worth your time.</p>
+    <div id="todo-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Cards inserted here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-stone-400 text-center text-sm py-6">
+    &copy; 2026 Encinitas Guide · Made with ♥ in California
+  </footer>
+
+</body>
+</html>
