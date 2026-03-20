@@ -41,8 +41,43 @@
     <h2 class="text-3xl font-bold mb-2 text-teal-700">Restaurants</h2>
     <p class="text-stone-500 mb-8">Local favorites and must-try spots in Encinitas.</p>
     <div id="restaurant-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Cards inserted here -->
+
+      <!-- Broad Street Dough Co. -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+        <div class="relative h-56 overflow-hidden">
+          <img id="bsdc-img"
+            src="https://visitencinitasca.com/wp-content/uploads/2024/03/EVC-Broad-Street-Dough-Renewww_2024.jpg"
+            alt="Broad Street Dough Co."
+            class="w-full h-full object-cover transition duration-500" />
+          <div class="absolute bottom-2 right-2 flex gap-1">
+            <button onclick="bsdcPhoto(0)" class="w-2 h-2 rounded-full bg-white opacity-80"></button>
+            <button onclick="bsdcPhoto(1)" class="w-2 h-2 rounded-full bg-white opacity-50"></button>
+            <button onclick="bsdcPhoto(2)" class="w-2 h-2 rounded-full bg-white opacity-50"></button>
+            <button onclick="bsdcPhoto(3)" class="w-2 h-2 rounded-full bg-white opacity-50"></button>
+          </div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between mb-1">
+            <h3 class="text-lg font-bold text-stone-800">Broad Street Dough Co.</h3>
+            <span class="text-xs bg-teal-100 text-teal-700 font-medium px-2 py-0.5 rounded-full">Donuts</span>
+          </div>
+          <p class="text-sm text-stone-500 mb-3">967 S Coast Hwy 101 · Lumberyard Shopping Center</p>
+          <p class="text-sm text-stone-600">40+ creative donuts daily, plus rotating specials. Vegan and gluten-free options available. A must-stop on the 101.</p>
+        </div>
+      </div>
+
     </div>
+    <script>
+      const bsdcPhotos = [
+        "https://visitencinitasca.com/wp-content/uploads/2024/03/EVC-Broad-Street-Dough-Renewww_2024.jpg",
+        "https://visitencinitasca.com/wp-content/uploads/2024/03/EVC-Broad-Street-Dough-2-Renewww_2024.jpg",
+        "https://visitencinitasca.com/wp-content/uploads/2024/03/EVC-Broad-Street-Dough-3-Renewww_2024.jpeg",
+        "https://visitencinitasca.com/wp-content/uploads/2024/03/EVC-Broad-Street-Dough-4-Renewww_2024.jpeg",
+      ];
+      function bsdcPhoto(i) {
+        document.getElementById('bsdc-img').src = bsdcPhotos[i];
+      }
+    </script>
   </section>
 
   <!-- Beaches -->
